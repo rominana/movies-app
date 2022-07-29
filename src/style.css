@@ -267,29 +267,29 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  margin: 6em;
+  margin: 3em auto;
   padding: 2em;
   border: 1px solid #ebecf0;
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.9);
-  width: 90%;
+  width: 80%;
   height: 85%;
   text-align: center;
 }
 
 .popup {
-    display: flex;
-    flex-direction: column;
-    /* width: 90%;
-    padding: 1rem; */
-    height: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
 }
 
 .pop-up-title-div {
   display: flex;
   justify-items: center;
   justify-content: space-between;
+  padding-top: 2em;
+  width: 80%;
 }
 
 .close-btn {
@@ -309,13 +309,13 @@ a {
   display: flex;
   gap: 3em;
   justify-content: center;
-  margin-top: 1em;
-  margin-left: 10rem;
+  margin-top: 5em;
+  max-width: 85%;
+  height: 40%;
 }
 
 .popup-img {
   max-width: 100%;
-  max-height: 80%;
   height: auto;
   border-radius: 15px;
   padding-top: unset;
@@ -332,7 +332,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 60%;
 }
 
 .comment-btn {
@@ -351,17 +350,19 @@ a {
 }
 
 h3 {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding: 25px 25px;
+  font-size: 1.2rem;
 }
 
 .pop-up-title {
   padding-top: 40px;
   font-size: 30px;
+  display: flex;
+  align-self: flex-start;
 }
 
 th {
-  /* font-size: 0.8rem; */
+  font-size: 1.2rem;
 }
 
 tbody {
@@ -376,16 +377,18 @@ td {
 
 .summary p {
   text-align: center;
-  padding-top: 1rem;
-  line-height: 1.5em;
-  font-size: 0.8rem;
+  padding-top: 3rem;
+  line-height: 1.2em;
+  font-size: 1rem;
 }
 
 .pop-up-comments {
-  /* padding-bottom: 25px; */
+  padding-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
   color: #1ECBD7;
+  text-transform: uppercase;
+  padding: 15px 15px;
 }
 
 .item-counter-container {
@@ -399,11 +402,19 @@ td {
 }
 
 .comments-count {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
 }
 
 .div-comments-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+tbody.tbody {
+  font-size: 12px;
+}
+
+table.comments {
+  width: 40%;
 }

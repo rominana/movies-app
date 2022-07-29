@@ -48,7 +48,6 @@ const modal = async (title, imgUrl, itemID, summary) => {
   commentHeader.textContent = 'Comment';
   tableRow.append(dateHeader, nameHeader, commentHeader);
 
-
   const tableBody = document.createElement('tbody');
   tableBody.classList.add('tbody');
   commentTable.append(tableRow, tableBody);
@@ -67,7 +66,7 @@ const modal = async (title, imgUrl, itemID, summary) => {
   const formDiv = document.createElement('div');
   formDiv.classList.add('form-div');
   const h3 = document.createElement('h3');
-  h3.textContent = 'Add a comment';
+  h3.textContent = 'Leave a comment';
 
   const form = document.createElement('form');
   form.classList.add('comment-form');
@@ -90,7 +89,7 @@ const modal = async (title, imgUrl, itemID, summary) => {
   titleDiv.classList.add('pop-up-title-div');
   popUpTitle.classList.add('pop-up-title');
   titleDiv.append(popUpTitle, closeBtn);
-  commentsContainer.append(commentTable, formDiv);
+  commentsContainer.append(formDiv, commentTable);
   popup.append(titleDiv, imgSummary, comments, commentsContainer);
 
   modal.style.display = 'flex';
